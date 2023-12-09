@@ -9,6 +9,7 @@ let seeds: number[] = nonEmptyLines[0].slice(nonEmptyLines[0].indexOf(':') + 2).
 
 let mapsArray: number[][][] = readInputFile("./input");
 
+
 let result = Number.MAX_VALUE;
 
 for(let seed of seeds) {
@@ -24,10 +25,9 @@ for(let seed of seeds) {
         break;
       } 
     }
-    if(seed < result)
-      result = seed;
   }
-
+  if(seed < result)
+    result = seed;
 }
 console.log(result);
 
